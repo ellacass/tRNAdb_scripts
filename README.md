@@ -32,7 +32,7 @@ existing tRNAdb.
 Of the 228 unique taxon IDs in this dataset, **214 (94%)** are not represented
 in the existing tRNAdb, representing a substantial expansion of archaeal tRNA
 coverage. The 171 taxon IDs present only in the existing tRNAdb are not covered
-by this dataset, this could also be due to expansion of archaeal taxonomy? Or my quality filters does not include many genomes from these groups? 
+by this dataset, this could also be due to expansion of archaeal taxonomy, my quality filters does not include many genomes from these groups, and I only downloaded genomes that are assigned to a superphyla under the nomenclature (Asgard, DPANN, TACK and Euryarchaeota) 
 
 ---
 
