@@ -11,15 +11,13 @@ existing tRNAdb.
 
 ## Dataset summary
 
-| Group | Total Genomes | Unique Taxonomic RANK | tRNAs | Undet/NNN | Pseudo |
-|---|---:|---:|---:|---:|
-| Asgard | 103 | 22 | 4,343 | 53 | 94 |
-| DPANN | 177 | 29 | 6,624 | 50 | 227 |
-| TACK | 460 | 122 | 20,241 | 119 | 334 |
-| Euryarchaeota | 237 | 55 | 9,530 | 27 | 66 |
-| **Total** | **977** | **40,738** | **249** | **627** |
-
-> Asgard pseudo counts pending completion of pipeline run.
+| | Asgard | DPANN | TACK | Euryarchaeota | Total |
+|---|---:|---:|---:|---:|---:|
+| **Genomes** | 103 | 177 | 460 | 237 | **977** |
+| **Unique Taxon IDs** | 22 | 29 | 122 | 55 | **228** |
+| **tRNAs** | 4,343 | 6,624 | 20,241 | 9,530 | **40,738** |
+| **Undet/NNN** | 53 | 50 | 119 | 27 | **249** |
+| **Pseudo** | 94 | 227 | 334 | 66 | **721** |
 
 ---
 
