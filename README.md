@@ -13,7 +13,7 @@ existing tRNAdb.
 
 | Group | Genomes | tRNAs | Undet/NNN | Pseudo |
 |---|---:|---:|---:|---:|
-| Asgard | 103 | 4,343 | 53 | — |
+| Asgard | 103 | 4,343 | 53 | 94 |
 | DPANN | 177 | 6,624 | 50 | 227 |
 | TACK | 460 | 20,241 | 119 | 334 |
 | Euryarchaeota | 237 | 9,530 | 27 | 66 |
