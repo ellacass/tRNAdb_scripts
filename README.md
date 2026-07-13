@@ -19,6 +19,21 @@ existing tRNAdb.
 | **Undet/NNN** | 53 | 50 | 119 | 27 | **249** |
 | **Pseudo** | 94 | 227 | 334 | 66 | **721** |
 
+## Comparison with existing tRNAdb
+
+| | Count |
+|---|---:|
+| Unique Taxon IDs in this dataset | 228 |
+| Unique Taxon IDs in existing tRNAdb | 185 |
+| Shared between both | 14 |
+| Novel to this dataset | 214 |
+| Only in existing tRNAdb (not covered here) | 171 |
+
+Of the 228 unique taxon IDs in this dataset, **214 (94%)** are not represented
+in the existing tRNAdb, representing a substantial expansion of archaeal tRNA
+coverage. The 171 taxon IDs present only in the existing tRNAdb are not covered
+by this dataset, this could also be due to expansion of archaeal taxonomy? Or my quality filters does not include many genomes from these groups? 
+
 ---
 
 ##  Genome selection
