@@ -1,38 +1,45 @@
+# 1. Create a dedicated directory to hold the individual FASTA files
 mkdir -p individual_fastas
+
 for file in *_structures.txt; do
     echo "Splitting sequences from: $file"
     
-    # Extract genome ID and taxon ID from filename
-    genome_id="${file/_structures.txt/}"
-    taxon_id="${genome_id%%.*}"
-
-    /usr/bin/awk -v genome_id="$genome_id" -v taxon_id="$taxon_id" '
+    /usr/bin/awk '
+    # Match the header line containing "Length:"
     /Length:/ {
         full_id = $1;
         coords = $2;
-        gsub(/[()]/, "", coords);
-
-        # Contig: everything in full_id before .trnaX
-        contig = full_id;
-        sub(/\.trna[0-9]+$/, "", contig);
+        gsub(/[()]/, "", coords); # Remove parentheses
+        
+        split(full_id, id_parts, ".");   taxon_id = id_parts[1];
+        split(full_id, v_parts, "_");    version_id = v_parts[1];
     }
-
+    
+    # Match the line starting with "Type:" to grab AA and Anticodon
     /^Type:/ {
         amino_acid = $2;
         anticodon = $4;
     }
-
+    
+    # Match the sequence line, construct the header, and write to a unique file
     /^Seq:/ {
         sequence = $2;
-
-        header = sprintf("%s_%s_%s_%s_%s_%s", taxon_id, genome_id, contig, coords, amino_acid, anticodon);
-
+        
+        # Build the exact header string (without quotes)
+        header = sprintf("%s_%s_%s_%s_%s", taxon_id, version_id, coords, amino_acid, anticodon);
+        
+        # Define the unique path and filename
         filename = "individual_fastas/" header ".fasta";
+        
+        # Write out the file cleanly
         printf ">%s\n%s\n", header, sequence > filename;
+        
+        # Close the file immediately to avoid hitting macOS open-file limits
         close(filename);
     }
     ' "$file"
 done
+
 echo "----------------------------------------"
 echo "Done! Check the 'individual_fastas' folder."
 echo "Total files generated: $(ls -1 individual_fastas | wc -l)"
