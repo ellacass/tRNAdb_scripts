@@ -3,7 +3,7 @@
 > Processing pipeline for archaeal tRNA annotation
 
 All scripts for each processing step are provided in this repository. This pipeline
-generates tRNA annotations for **977 complete archaeal genomes** across four major
+generates tRNA annotations for **977 high quality archaeal genomes** across four major
 phylogenetic groups, of which **962 taxon IDs are not currently represented** in the
 existing tRNAdb.
 
@@ -30,7 +30,7 @@ existing tRNAdb.
 | Only in existing tRNAdb (not covered here) | 171 |
 
 Of the 228 unique taxon IDs in this dataset, **214 (94%)** are not represented
-in the existing tRNAdb, representing a substantial expansion of archaeal tRNA
+in the existing tRNAdb, representing an expansion of archaeal tRNA
 coverage. The 171 taxon IDs present only in the existing tRNAdb are not covered
 by this dataset, this could also be due to expansion of archaeal taxonomy, my quality filters does not include many genomes from these groups, and I only downloaded genomes that are assigned to a superphyla under the nomenclature (Asgard, DPANN, TACK and Euryarchaeota) 
 
