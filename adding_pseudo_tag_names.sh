@@ -47,8 +47,6 @@ for stats_file in "$STATS_DIR"/*_trnascan.stats.txt; do
 done
 
 echo "Found ${#PSEUDO[@]} pseudo loci (both orientations)"
-
-# ── Debug output ───────────────────────────────────────────────────────────
 echo ""
 echo "Sample pseudo keys from stats:"
 for key in "${!PSEUDO[@]}"; do echo "  $key"; done | head -5
