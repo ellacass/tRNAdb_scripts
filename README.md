@@ -2,7 +2,8 @@
 All processing steps of tRNAs used for tRNAdb
 
 ### run tRNAscan-SE (v. 2.0.12)
-Retrieve all initial tRNA candidates from complete archaeal genomes 
+Retrieve all initial tRNA candidates from complete archaeal genomes
+Archaeal mode specifically used for analysis
 
 ### split each candidate seq identified by tRNAscan
 Prepare to run infernal/cmsearch on each individual fasta of tRNA identified
