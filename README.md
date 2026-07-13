@@ -17,7 +17,7 @@ existing tRNAdb.
 | DPANN | 177 | 6,624 | 50 | 227 |
 | TACK | 460 | 20,241 | 119 | 334 |
 | Euryarchaeota | 237 | 9,530 | 27 | 66 |
-| **Total** | **977** | **40,738** | **249** | **627+** |
+| **Total** | **977** | **40,738** | **249** | **627** |
 
 > Asgard pseudo counts pending completion of pipeline run.
 
