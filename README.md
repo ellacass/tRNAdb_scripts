@@ -176,7 +176,7 @@ Pseudo tRNAs are retained for further review.
 
 ---
 
-## 🗂️ Directory structure
+## Directory structure
 
 ```
 tRNAdb_scripts/
