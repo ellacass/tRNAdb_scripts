@@ -75,7 +75,7 @@ this pipeline.**
 |---|---|
 | tRNAscan-SE | 2.0.12 |
 | Infernal / cmsearch | 1.1.5 |
-| CheckM2 | 1.0. |
+| CheckM2 | 1.0.1 |
 
 Covariance models are bundled with tRNAscan-SE and located at:
 `$CONDA_PREFIX/lib/tRNAscan-SE/models/`
