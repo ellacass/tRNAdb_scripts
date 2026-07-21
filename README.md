@@ -189,6 +189,28 @@ Pseudo tRNAs are retained for further review.
 
 ---
 
+## Pseudogene analysis
+
+Pseudogene bias was assessed by isotype and anticodon across all four archaeal groups.
+The heatmap shows the top 15 isotype+anticodon combinations as a percentage of each
+group's total pseudo tRNA count, with raw counts annotated. The stacked bar shows the
+proportional composition of each group's pseudo set.
+
+![Pseudogene bias across archaeal groups](plots/pseudo_bias_combined.pdf)
+
+Key observations:
+- **Cys_GCA** is the dominant pseudogene isotype in Asgard (26% of all Asgard pseudogenes)
+  and Euryarchaeota, consistent with known instability of tRNA-Cys in archaea
+- **Leu_CAA** dominates in TACK (17%) but is absent from Asgard despite similar
+  gene copy numbers (~0.82 vs 0.99 per genome) and a higher rate of non-canonical
+  intron positions in Asgard (37% vs 21%), suggesting stronger purifying selection
+  on Leu_CAA in Asgard lineages
+- **Met_CAT and Tyr_GTA** dominate DPANN, consistent with ongoing gene loss in
+  these genome-reduced episymbionts
+- **Trp_CCA** pseudogenisation is unique to Asgard, absent from all other groups
+- ~25–35% of pseudo tRNAs per group fall outside the top 20 isotype+anticodon
+  combinations, indicating broad rather than isotype-specific pseudogenisation pressure
+
 ## Directory structure
 
 ```
