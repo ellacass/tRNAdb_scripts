@@ -145,11 +145,6 @@ cmsearch validation. Sequences are taken from `*_structures.txt`. The genome
 accession and taxon ID are parsed from the structures filename; the contig is
 extracted from the tRNAscan entry header.
 
-> Pseudogene candidates lacking a `Seq:` line in the structures output
-> (typically the most degenerate entries) are not represented in
-> `individual_fastas/` and are absent from downstream steps.
-
----
 
 ### Step 3 — Run cmsearch with archaeal model (`03_run_cmsearch_arch.sh`)
 
