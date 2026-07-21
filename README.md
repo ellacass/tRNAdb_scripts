@@ -207,25 +207,3 @@ Key observations:
 - ~25–35% of pseudo tRNAs per group fall outside the top 20 isotype+anticodon
   combinations, indicating broad rather than isotype-specific pseudogenisation pressure
 
-## Directory structure
-
-```
-tRNAdb_scripts/
-├── 01_run_trnascan.sh
-├── 02_split_individual_fastas.sh
-├── 03_run_cmsearch_arch.sh
-├── 04_run_cmsearch_SeC.sh
-├── 05_add_pseudo_labels.sh
-└── README.md
-
-Per-group working directories (not in repo):
-<Group>/                                      e.g. DPANN/, TACK/, Asgard/, Eury/
-├── <genome_accession>_trnascan.stats.txt
-├── <genome_accession>_structures.txt
-└── individual_fastas/
-    ├── <tRNA_id>.fasta
-    ├── <tRNA_id>_Pseudo.fasta
-    └── infernal_results/
-        ├── <tRNA_id>_cmsearch.out
-        └── <tRNA_id>_cmsearch.tblout
-```
