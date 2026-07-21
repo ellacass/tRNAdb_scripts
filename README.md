@@ -205,8 +205,8 @@ Key observations:
   gene copy numbers (~0.82 vs 0.99 per genome) and a higher rate of non-canonical
   intron positions in Asgard (37% vs 21%), suggesting stronger purifying selection
   on Leu_CAA in Asgard lineages
-- **Met_CAT and Tyr_GTA** dominate DPANN, consistent with ongoing gene loss in
-  these genome-reduced episymbionts
+- **Met_CAT and Tyr_GTA** dominate DPANN,
+> **Note:** Met_CAT pseudogenes in DPANN are predominantly driven by a single taxon (2026773, 20/23 genomes) and low-scoring calls on short assembly fragments, and should not be interpreted as a broad DPANN-wide signal.
 - **Trp_CCA** pseudogenisation is unique to Asgard, absent from all other groups
 - ~25–35% of pseudo tRNAs per group fall outside the top 20 isotype+anticodon
   combinations, indicating broad rather than isotype-specific pseudogenisation pressure
