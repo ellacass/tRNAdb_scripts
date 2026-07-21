@@ -64,7 +64,7 @@ Evidence includes:
   rather than `SeC` used in 2.0
 - Coordinate truncations at intron boundaries consistent with older annotation tools
 
-![Pseudogene bias across archaeal groups](trna_plots.pdf)
+![Comparing -A mode to bv-brc annotated tRNA annotations](trna_plots.pdf)
 
 **tRNAscan-SE 2.0.12 in archaeal mode (`-A`) is used exclusively throughout
 this pipeline.**
