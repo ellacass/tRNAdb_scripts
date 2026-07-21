@@ -74,7 +74,8 @@ this pipeline.**
 | Tool | Version |
 |---|---|
 | tRNAscan-SE | 2.0.12 |
-| Infernal / cmsearch | 1.1.5 (Sep 2023) |
+| Infernal / cmsearch | 1.1.5 |
+| CheckM2 | 1.0. |
 
 Covariance models are bundled with tRNAscan-SE and located at:
 `$CONDA_PREFIX/lib/tRNAscan-SE/models/`
@@ -206,7 +207,7 @@ Key observations:
   intron positions in Asgard (37% vs 21%), suggesting stronger purifying selection
   on Leu_CAA in Asgard lineages
 - **Met_CAT and Tyr_GTA** dominate DPANN,
-> **Note:** Met_CAT pseudogenes in DPANN are predominantly driven by a single taxon (2026773, 20/23 genomes) and low-scoring calls on short assembly fragments, and should not be interpreted as a broad DPANN-wide signal.
+> **Note:** Met_CAT pseudogenes in DPANN are predominantly driven by a single taxon (2026773, 20/23 genomes), which are from Pacearchaeota (highly reduced DPANN episymbiont). Outsourcing translational core?
 - **Trp_CCA** pseudogenisation is unique to Asgard, absent from all other groups
 - ~25–35% of pseudo tRNAs per group fall outside the top 20 isotype+anticodon
   combinations, indicating broad rather than isotype-specific pseudogenisation pressure
