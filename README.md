@@ -192,7 +192,7 @@ The heatmap shows the top 15 isotype+anticodon combinations as a percentage of e
 group's total pseudo tRNA count, with raw counts annotated. The stacked bar shows the
 proportional composition of each group's pseudo set.
 
-![Pseudogene bias across archaeal groups](plots/pseudo_bias_combined.pdf)
+![Pseudogene bias across archaeal groups](pseudo_bias_combined.pdf)
 
 Key observations:
 - **Cys_GCA** is the dominant pseudogene isotype in Asgard (26% of all Asgard pseudogenes)
